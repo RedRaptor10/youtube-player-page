@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>YouTube Player Page</title>
+    </head>
+    <body>
+        <div id="navbar">
+            <div id="navbar-left">
+                <button id="guide-btn"></button>
+                <a href="#"><img id="logo" src="assets/logo.png" alt="YouTube Logo"></a>
+            </div>
+            <div id="navbar-center">
+                <form id="search-bar">
+                    <div id="search-input-container">
+                        <input id="search-input" placeholder="Search">
+                    </div>
+                    <button id="search-btn">
+                        <img id="search-btn-icon" src="assets/search.svg" alt="Search Button">
+                    </button>
+                    <button id="voice-btn">
+                        <img id="voice-btn-icon" src="assets/voice.png" alt="Voice Button">
+                    </button>
+                </form>
+            </div>
+            <div id="navbar-right">
+                <img id="apps-btn-icon" src="assets/apps.png" alt="Apps">
+                <button id="settings-btn"></button>
+                <button id="sign-in-btn">
+                    <img id="sign-in-btn-icon" src="assets/user.png" alt="Sign In">
+                    <span>SIGN IN</span>
+                </button>
+            </div>
+        </div>
+        <div id="main">
+            <div id="content">
+                <iframe id="video" src="https://www.youtube.com/embed/QwievZ1Tx-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="video-meta">
+                    <h1 id="video-title">Marvel Studios' Avengers: Infinity War - Official Trailer</h1>
+                    <div id="video-meta-inner">
+                        <span id="video-meta-views-date">103,216,173 views • Mar 16, 2018</span>
+                        <div id="video-meta-btns">
+                            <button id="like-btn">1.9M</button>
+                            <button id="dislike-btn">DISLIKE</button>
+                            <button id="share-btn">SHARE</button>
+                            <button id="save-btn">SAVE</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="video-info">
+                    <div id="video-info-left">
+                        <img class="user-icon" src="assets/user.png" alt="Channel Icon">
+                    </div>
+                    <div id="video-info-center">
+                        <h3 id="channel"><a href="#">Marvel Entertainment</a></h3>
+                        <span id="channel-subscribers">17.8M subscribers</span>
+                        <p id="video-description">
+                            In theaters April 27. Get your tickets now: <a href="http://www.fandango.com/infinitywar">http://www.fandango.com/infinitywar</a>
+                            <br><br>
+                            Find out more on Marvel.com - <a href="http://bit.ly/2Iv6ouB">http://bit.ly/2Iv6ouB</a>
+                        </p>
+                        <button id="show-more-btn">SHOW MORE</button>
+                    </div>
+                    <div id="video-info-right">
+                        <button id="subscribe-btn">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <div id="comments">
+                    <div id="comments-info">
+                        <span id="comments-count">180,294 Comments</span>
+                        <button id="sort-comments-btn">SORT BY</button>
+                        <form id="comments-form">
+                            <img class="user-icon" src="assets/user.png" alt="User Icon">
+                            <input id="comments-input" placeholder="Add a public comment..."></input>
+                        </form>
+                    </div>
+                    <div id="comments-list">
+                        <div class="comment">
+                            <img class="user-icon" src="assets/user.png" alt="User Icon">
+                            <div class="comment-content">
+                                <div class="comment-info">
+                                    <a class="comment-user" href="#">User 1</a>
+                                    <span class="comment-date">10 months ago</span>
+                                </div>
+                                <div class="comment-text">
+                                    The hype of this movie was once in a lifetime
+                                </div>
+                                <div class="comment-btns">
+                                    <button class="comment-like-btn">16K</button>
+                                    <button class="comment-dislike-btn"></button>
+                                    <button class="comment-reply-btn">REPLY</button>
+                                </div>
+                                <button class="comment-view-replies-btn">View 223 replies</button>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <img class="user-icon" src="assets/user.png" alt="User Icon">
+                            <div class="comment-content">
+                                <div class="comment-info">
+                                    <a class="comment-user" href="#">User 2</a>
+                                    <span class="comment-date">9 months ago (edited)</span>
+                                </div>
+                                <div class="comment-text">
+                                    You know a trailer is good if you’re back watching this 3 yrs later and still get excited.
+                                </div>
+                                <div class="comment-btns">
+                                    <button class="comment-like-btn">7.4K</button>
+                                    <button class="comment-dislike-btn"></button>
+                                    <button class="comment-reply-btn">REPLY</button>
+                                </div>
+                                <button class="comment-view-replies-btn">View 50 replies</button>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <img class="user-icon" src="assets/user.png" alt="User Icon">
+                            <div class="comment-content">
+                                <div class="comment-info">
+                                    <a class="comment-user" href="#">User 3</a>
+                                    <span class="comment-date">10 months ago</span>
+                                </div>
+                                <div class="comment-text">
+                                    This and Endgame had me feeling like this was actually happening in real life.
+                                </div>
+                                <div class="comment-btns">
+                                    <button class="comment-like-btn">4.9K</button>
+                                    <button class="comment-dislike-btn"></button>
+                                    <button class="comment-reply-btn">REPLY</button>
+                                </div>
+                                <button class="comment-view-replies-btn">View 21 replies</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside id="sidebar">
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb1.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">12:53</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">AVENGERS 3: Infinity War All Bonus Features & Bloopers...</div>
+                            <div class="video-suggestion-channel">KinoCheck.com</div>
+                            <div class="video-suggestion-meta">
+                                <span>42M views • 3 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb2.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">1:06:42</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">Avengers Infinity War & Endgame {SPOILERS}...</div>
+                            <div class="video-suggestion-channel">Audience Reactions</div>
+                            <div class="video-suggestion-meta">
+                                <span>21M views • 2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb3.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">17:59</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">Everything GREAT About Avengers: Infinity War! (Part 1)</div>
+                            <div class="video-suggestion-channel">CinemaWins</div>
+                            <div class="video-suggestion-meta">
+                                <span>7.4M views • 3 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb1.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">12:53</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">AVENGERS 3: Infinity War All Bonus Features & Bloopers...</div>
+                            <div class="video-suggestion-channel">KinoCheck.com</div>
+                            <div class="video-suggestion-meta">
+                                <span>42M views • 3 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb2.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">1:06:42</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">Avengers Infinity War & Endgame {SPOILERS}...</div>
+                            <div class="video-suggestion-channel">Audience Reactions</div>
+                            <div class="video-suggestion-meta">
+                                <span>21M views • 2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb3.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">17:59</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">Everything GREAT About Avengers: Infinity War! (Part 1)</div>
+                            <div class="video-suggestion-channel">CinemaWins</div>
+                            <div class="video-suggestion-meta">
+                                <span>7.4M views • 3 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb1.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">12:53</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">AVENGERS 3: Infinity War All Bonus Features & Bloopers...</div>
+                            <div class="video-suggestion-channel">KinoCheck.com</div>
+                            <div class="video-suggestion-meta">
+                                <span>42M views • 3 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb2.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">1:06:42</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">Avengers Infinity War & Endgame {SPOILERS}...</div>
+                            <div class="video-suggestion-channel">Audience Reactions</div>
+                            <div class="video-suggestion-meta">
+                                <span>21M views • 2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb3.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">17:59</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">Everything GREAT About Avengers: Infinity War! (Part 1)</div>
+                            <div class="video-suggestion-channel">CinemaWins</div>
+                            <div class="video-suggestion-meta">
+                                <span>7.4M views • 3 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb1.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">12:53</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">AVENGERS 3: Infinity War All Bonus Features & Bloopers...</div>
+                            <div class="video-suggestion-channel">KinoCheck.com</div>
+                            <div class="video-suggestion-meta">
+                                <span>42M views • 3 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb2.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">1:06:42</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">Avengers Infinity War & Endgame {SPOILERS}...</div>
+                            <div class="video-suggestion-channel">Audience Reactions</div>
+                            <div class="video-suggestion-meta">
+                                <span>21M views • 2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="video-suggestion">
+                        <img class="video-suggestion-thumb" src="assets/thumb3.webp" alt="Video Suggestion Thumbnail">
+                            <div class="video-suggestion-length-container">
+                                <span class="video-suggestion-length">17:59</span>
+                            </div>
+                        </img>
+                        <div class="video-suggestion-information">
+                            <div class="video-suggestion-title">Everything GREAT About Avengers: Infinity War! (Part 1)</div>
+                            <div class="video-suggestion-channel">CinemaWins</div>
+                            <div class="video-suggestion-meta">
+                                <span>7.4M views • 3 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </aside>
+        </div>
+    </body>
+</html>

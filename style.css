@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+
+body {
+    background: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+    font-family: 'Robot', 'Arial', 'sans-serif';
+}
+
+a {
+    color: rgb(0, 128, 255);
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    border: 0;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(32, 32, 32, 0.99);
+    height: 10%;
+    padding: 0 24px 0 24px;
+}
+
+#navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+#navbar-left a {
+    line-height: 0;
+}
+
+#guide-btn {
+    font-size: 24px;
+}
+
+#guide-btn:before {
+    content: '\2630';
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-left: 24px;
+}
+
+#navbar-center {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    display: flex;
+    height: 40px;
+}
+
+#search-input-container {
+    background: rgb(16, 16, 16);
+    border-top: 1px solid rgb(48, 48, 48);
+    border-left: 1px solid rgb(48, 48, 48);
+    border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+#search-input {
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    padding: 0 12px 0 12px;
+    margin-right: 2px;
+    color: rgb(192, 192, 192);
+    font-size: 16px;
+    border: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+#search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(48, 48, 48);
+    width: 60px;
+    height: 100%;
+}
+
+#search-btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#voice-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(24, 24, 24);
+    width: 40px;
+    height: 100%;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+
+#voice-btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+#apps-btn-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+#settings-btn {
+    font-size: 24px;
+    margin:0 24px 0 24px;
+}
+
+#settings-btn:before {
+    content: '\205e';
+}
+
+#sign-in-btn {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-right: 12px;
+    color: rgb(0, 128, 255);
+    font-size: 14px;
+    border: 1px solid rgb(0, 128, 255);
+}
+
+#sign-in-btn-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 12px 0 12px;
+}
+
+/* Main */
+#main {
+    display: flex;
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto 0 auto;
+    padding-top: 24px;
+}
+
+#content {
+    min-width: 75%;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+#video-title {
+    margin-top: 12px;
+}
+
+#video-meta-inner {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 0;
+}
+
+#video-meta-views-date {
+    color: rgb(192, 192, 192);
+    font-size: 14px;
+}
+
+#video-meta-btns {
+    margin-left: auto;
+}
+
+#video-meta-btns button {
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+#video-info {
+    display: flex;
+    padding: 24px 0 24px 0;
+    border-top: 1px solid rgb(48, 48, 48);
+    border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+#video-info-left {
+    width: 5%;
+    text-align: center;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 12px 0 12px;
+    cursor: pointer;
+}
+
+#video-info-center {
+    width: 85%;
+}
+
+#channel {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#channel a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#channel-subscribers {
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+}
+
+#video-description {
+    font-size: 14px;
+    padding: 12px 0 12px 0;
+}
+
+#show-more-btn {
+    color: rgb(192, 192, 192);
+}
+
+#video-info-right {
+    width: 10%;
+    text-align: center;
+}
+
+#subscribe-btn {
+    background: rgb(255, 0, 0);
+    padding: 8px 12px 8px 12px;
+    border: 2px;
+    border-radius: 4px;
+}
+
+#comments-info {
+    padding: 12px 0 12px 0;
+}
+
+#sort-comments-btn {
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+#comments-form {
+    display: flex;
+    margin: 12px 0 12px 0;
+}
+
+#comments-input {
+    background: none;
+    width: 100%;
+    color: rgb(192, 192, 192);
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    border-right: 0;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.comment-user {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.comment-date {
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+}
+
+.comment-text {
+    padding: 12px 0 12px 0;
+}
+
+.comment-btns button {
+    color: rgb(192, 192, 192);
+}
+
+.comment-view-replies-btn {
+    padding: 12px 0 12px 0;
+    color: rgb(0, 128, 255);
+    font-weight: bold;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 25%;
+    padding: 0 12px 0 12px;
+}
+
+.video-suggestion {
+    display: flex;
+    padding: 12px 0 12px 0;
+    color: rgb(255, 255, 255);
+}
+
+.video-suggestion-length-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    width: 168px;
+    height: 94px;
+}
+
+.video-suggestion-length {
+    background: rgba(0, 0, 0, 0.75);
+    margin: 0 4px 4px 0;
+    padding: 1px;
+    font-size: 14px;
+}
+
+.video-suggestion-information {
+    padding: 4px;
+}
+
+.video-suggestion-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.video-suggestion-channel, .video-suggestion-meta {
+    padding: 2px 0 2px 0;
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+}
